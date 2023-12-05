@@ -1,19 +1,21 @@
 /* global test, expect */
 const { expect, assert } = require('chai');
 
-const getAllCoursesInAccount = require('../src/getAllCoursesInAccount')
+const getCourses = require('../src/getCourses')
 
-describe('getAllCoursesInAccount function exists', () => {
+describe('getCourses function exists', () => {
   it('typecheck', ()=> {
-    expect(getAllCoursesInAccount).to.be.a('function');
+    expect(getCourses).to.be.a('function');
   });
 });
 
-describe('getAllCoursesForAccount 1', () => {
-  it('Account 1', async () => {
-    const courses = await getAllCoursesInAccount(1);
+describe('getCoursesForTerm', () => {
+  it('All Courses for 20241', async () => {
+    const courses = await getCourses(1, ['enrollment_term_id=sis_term_id:20241']);
     expect(courses).to.be.a('array');
-  }).timeout(10000);
+    assert.isAtLeast(courses.length,10, `Courses.length ${courses.length} was not at least 10`);
+  }).timeout(15000);
+
 });
 
 

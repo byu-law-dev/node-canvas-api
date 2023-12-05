@@ -22,7 +22,7 @@ async function requestObj(url) {
         'Content-Type':'application/json'
       }
     });
-    return response.data;
+    return response;
   } catch(err){
     console.error(err);
   }
@@ -39,12 +39,12 @@ const requestObj = url => ({
 });
 */
 
-const fetchAll = (url, result = []) => request(requestObj(url)).then(response => {
-  result = [...result, ...response.body];
+const fetchAll = (url, result = []) => requestObj(url).then(response => {
+  result = [...result, ...response.data];
   const links = linkparser(response.headers.link);
   return links.next ? fetchAll(links.next.url, result) : result;
 });
 
-const fetchAllRateLimited = limiter.wrap(fetchAll);
+const fetchAllRateLimited = /*limiter.wrap(*/fetchAll/*)*/;
 
 module.exports = fetchAllRateLimited;
