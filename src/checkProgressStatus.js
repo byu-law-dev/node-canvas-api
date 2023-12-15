@@ -1,4 +1,4 @@
-var getProgress = require('./getProgress');
+const getProgress = require('./getProgress');
 
 /**
  * Returns true if progress of id is complete, false otherwise

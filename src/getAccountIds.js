@@ -1,4 +1,4 @@
-var getAccounts = require('./getAccounts');
+const getAccounts = require('./getAccounts');
 
 /**
  * Returns all account ids 

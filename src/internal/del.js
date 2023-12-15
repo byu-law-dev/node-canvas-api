@@ -16,7 +16,7 @@ async function deleteRequest(url, body){
         'Content-Type':'application/json'`
       },
     });
-    return response.data;
+    return response;
 
   } catch (err) {
     console.error(err);

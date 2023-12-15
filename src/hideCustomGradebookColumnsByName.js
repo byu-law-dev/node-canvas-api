@@ -1,6 +1,5 @@
-var getCustomGradeBookColumns = require('./getCustomGradeBookColumns');
-
-var hideCustomGradebookColumn = require('./hideCustomGradebookColumn');
+const getCustomGradeBookColumns = require('./getCustomGradeBookColumns');
+const hideCustomGradebookColumn = require('./hideCustomGradebookColumn');
 
 /**
  * Hide Custom Gradebook Column by Name

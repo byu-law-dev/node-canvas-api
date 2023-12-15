@@ -1,6 +1,6 @@
-var getCustomGradeBookColumns = require('./getCustomGradeBookColumns');
+const getCustomGradeBookColumns = require('./getCustomGradeBookColumns');
 
-var deleteCustomGradebookColumn = require('./deleteCustomGradebookColumn');
+const deleteCustomGradebookColumn = require('./deleteCustomGradebookColumn');
 
 /**
  * Deletes all custom gradebook columns

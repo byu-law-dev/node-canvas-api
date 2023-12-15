@@ -1,4 +1,4 @@
-var getSubaccounts = require('./getSubaccounts');
+const getSubaccounts = require('./getSubaccounts');
 
 /**
  * Retrieves all depts in account

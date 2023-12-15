@@ -1,8 +1,6 @@
-var getOptions = require('./internal/getOptions');
-
-var getUsersInCourse = require('./getUsersInCourse');
-
-var putStudentNumberInGradeColumn = require('./putStudentNumberInGradeColumn');
+const getOptions = require('./internal/getOptions');
+const getUsersInCourse = require('./getUsersInCourse');
+const putStudentNumberInGradeColumn = require('./putStudentNumberInGradeColumn');
 
 /**
  * Put student number in existing custom column by ID

@@ -1,4 +1,4 @@
-var fetchAll = require('./internal/fetchAll');
+const fetchAll = require('./internal/fetchAll');
 
 const canvasDomain = process.env.CANVAS_API_DOMAIN;
 

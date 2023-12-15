@@ -1,10 +1,7 @@
-var getSubaccounts = require('./getSubaccounts');
-
-var getCourses = require('./getCourses');
-
-var getOptions = require('./internal/getOptions');
-
-var R = require('ramda');
+const getSubaccounts = require('./getSubaccounts');
+const getCourses = require('./getCourses');
+const getOptions = require('./internal/getOptions');
+const R = require('ramda');
 
 /**
  * Retrieves every course in an account.

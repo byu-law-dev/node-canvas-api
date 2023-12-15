@@ -1,10 +1,7 @@
-var getOptions = require('./internal/getOptions');
-
-var getUsersInCourse = require('./getUsersInCourse');
-
-var createCustomGradebookColumn = require('./createCustomGradebookColumn');
-
-var putStudentNumberInGradeColumn = require('./putStudentNumberInGradeColumn');
+const getOptions = require('./internal/getOptions');
+const getUsersInCourse = require('./getUsersInCourse');
+const createCustomGradebookColumn = require('./createCustomGradebookColumn');
+const putStudentNumberInGradeColumn = require('./putStudentNumberInGradeColumn');
 
 /**
  * Create gradebook with default title 'Student Number' and default column position 1 and

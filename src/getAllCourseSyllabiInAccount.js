@@ -1,6 +1,5 @@
-var getAllCoursesInAccount = require('./getAllCoursesInAccount');
-
-var getSyllabusOfCourse = require('./getSyllabusOfCourse');
+const getAllCoursesInAccount = require('./getAllCoursesInAccount');
+const getSyllabusOfCourse = require('./getSyllabusOfCourse');
 
 /**
  * Returns the syllabi of all courses contained under an Account

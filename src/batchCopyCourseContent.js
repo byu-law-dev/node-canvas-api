@@ -1,4 +1,4 @@
-var copyCourseContent = require('./copyCourseContent');
+const copyCourseContent = require('./copyCourseContent');
 
 /**
  * Batch copy course content, takes in an array of objects that hold the sourceID and targetIds.

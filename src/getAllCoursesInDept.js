@@ -1,8 +1,6 @@
-var getDeptIdsInAccount = require('./getDeptIdsInAccount');
-
-var getOptions = require('./internal/getOptions');
-
-var getCourses = require('./getCourses');
+const getDeptIdsInAccount = require('./getDeptIdsInAccount');
+const getOptions = require('./internal/getOptions');
+const getCourses = require('./getCourses');
 
 /**
  * Retrieves every course in an account.

@@ -1,4 +1,4 @@
-var postRequest = require('./internal/post');
+const postRequest = require('./internal/post');
 
 const canvasDomain = process.env.CANVAS_API_DOMAIN;
 

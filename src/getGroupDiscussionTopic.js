@@ -1,4 +1,4 @@
-var fetch = require('./internal/fetch');
+const fetch = require('./internal/fetch');
 
 const canvasDomain = process.env.CANVAS_API_DOMAIN;
 

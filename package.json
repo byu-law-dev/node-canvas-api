@@ -27,11 +27,9 @@
     "ramda": "^0.27.2"
   },
   "devDependencies": {
+    "@rollup/plugin-terser": "^0.4.4",
     "chai": "^4.3.10",
-    "mocha": "^10.2.0",
-    "rollup-plugin-commonjs": "^9.3.4",
-    "rollup-plugin-json": "^3.1.0",
-    "rollup-plugin-node-resolve": "^3.4.0"
+    "mocha": "^10.2.0"
   },
   "keywords": [
     "canvas",

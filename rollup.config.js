@@ -1,20 +1,14 @@
-const { terser } = require('rollup-plugin-terser')
-const resolve = require('rollup-plugin-node-resolve')
-const commonjs = require('rollup-plugin-commonjs')
-const json = require('rollup-plugin-json')
+import terser from '@rollup/plugin-terser';
 
 const config = {
-  input: './source/index.js',
+  input: './src/index.js',
   output: {
-    format: 'umd',
+    format: 'cjs',
+    dir: 'output',
     name: 'node-canvas-api'
   },
   plugins: [
-    resolve(),
-    commonjs({
-      include: 'node_modules/**'
-    }),
-    json()
+    terser()
   ]
 }
 

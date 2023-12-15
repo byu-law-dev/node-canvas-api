@@ -1,6 +1,4 @@
-var deleteRequest = require('./internal/del');
-
-require('dotenv').config();
+const deleteRequest = require('./internal/del');
 
 const canvasDomain = process.env.CANVAS_API_DOMAIN;
 

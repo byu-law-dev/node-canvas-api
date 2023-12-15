@@ -1,6 +1,6 @@
-var courseCopy = require('./courseCopy');
+const courseCopy = require('./courseCopy');
+const getProgress = require('./getProgress');
 
-var getProgress = require('./getProgress');
 
 /**
  * Initiates course copy.

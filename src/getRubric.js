@@ -1,10 +1,6 @@
-var fetch = require('./internal/fetch');
-
-var buildOptions = require('./internal/util');
-
-var getOptions = require('./internal/getOptions');
-
-require('dotenv').config();
+const fetch = require('./internal/fetch');
+const buildOptions = require('./internal/util');
+const getOptions = require('./internal/getOptions');
 
 const canvasDomain = process.env.CANVAS_API_DOMAIN;
 
